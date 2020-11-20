@@ -7,6 +7,7 @@ import (
 	"strings"
 )
 
+//命令行mac生成.exe文件: CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build main.go
 func main()  {
 
 	srcDir :="J:/超星汇雅/150-03"
