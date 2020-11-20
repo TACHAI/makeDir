@@ -34,7 +34,7 @@ func main()  {
 					newPath:= dirStr+"/"+strNames[len(strNames)-1]
 					fmt.Println("oldPath:"+oldPath)
 					fmt.Println("newPath:"+newPath)
-
+					// go 里面os.Rename方法 newPath应该是操作前不存在的路径  不会替换会报错
 					err:=os.Rename(oldPath,newPath)
 					if err!=nil{
 						fmt.Println(err.Error())
